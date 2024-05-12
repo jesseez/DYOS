@@ -45,7 +45,7 @@ function NavBar() {
 
     return (
         <AppBar position="static" id="NavBar">
-            <Container maxWidth="xl">
+            <Container maxWidth="null">
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
@@ -56,7 +56,7 @@ function NavBar() {
                         Do Your Own Swing
                     </Typography>
                     { /* Nav bar options for large screens */ }
-                    <Box sx={{ flex: 2, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly'}}>
+                    <Box sx={{ flex: 2, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly', maxWidth: '1000px'}}>
                         {generateExpandedNavBarOptions()}
                     </Box>
 
